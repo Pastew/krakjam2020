@@ -20,6 +20,23 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Beam.cs" t="Include" />
+          <e p="Potentiometer.cs" t="Include" />
+          <e p="PotValueText.cs" t="Include" />
+        </e>
+        <e p="WRMHL" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Manager" t="Include">
+              <e p="wrmhl.cs" t="Include" />
+            </e>
+            <e p="Thread" t="Include">
+              <e p="Common" t="Include">
+                <e p="wrmhlThread.cs" t="Include" />
+              </e>
+              <e p="wrmhlThread_Lines.cs" t="Include" />
+            </e>
+            <e p="wrmhlRead.cs" t="Include" />
+            <e p="wrmhlWrite.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="krakjam2020.sln" t="IncludeFlat" />
