@@ -21,6 +21,7 @@
         <e p="Scripts" t="Include">
           <e p="Beam.cs" t="Include" />
           <e p="Potentiometer.cs" t="Include" />
+          <e p="PotTester.cs" t="Include" />
           <e p="PotValueText.cs" t="Include" />
         </e>
         <e p="WRMHL" t="Include">

@@ -13,7 +13,6 @@ public class Beam : MonoBehaviour
     void Update()
     {
         _delayLeft -= Time.deltaTime;
-        
         if (_delayLeft <= 0)
         {
             Move();
