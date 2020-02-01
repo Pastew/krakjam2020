@@ -20,7 +20,7 @@ public class Screw : MonoBehaviour
 
     private void OnEnable()
     {
-        _previousPotValue = 100;
+        _previousPotValue = (int) Potentiometer.MaxVal;
         _level = new Random().Next(0, 80);
     }
 

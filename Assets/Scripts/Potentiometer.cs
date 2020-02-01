@@ -20,7 +20,11 @@ If you need speed and low latency take a look to wrmhlReadLatest.
 
 public class Potentiometer : MonoBehaviour
 {
-    public bool noArduino = true;
+    public static int Value = 0;
+    public static float MaxVal = 100;
+    public static float MinVal = 0;
+    
+    public bool noArduino = false;
 
     wrmhl myDevice = new wrmhl(); // wrmhl is the bridge beetwen your computer and hardware.
 
@@ -32,13 +36,12 @@ public class Potentiometer : MonoBehaviour
     [Tooltip("Timeout")] public int ReadTimeout = 20;
 
     [Tooltip("QueueLenght")] public int QueueLenght = 1;
-
-    public static int Value = 0;
-
+    
     [Header("Smoothing (average of last x reads) - optional")]
     [SerializeField] private bool _smooth = false;
     [SerializeField] private int _smoothLastValuesCapacity = 10;
     private Queue<int> _lastValuesRead;
+
 
     void Start()
     {

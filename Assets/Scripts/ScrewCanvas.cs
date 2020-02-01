@@ -45,7 +45,7 @@ public class ScrewCanvas : MonoBehaviour
     {
         _linearProgress.value = _screw.Level;
         _levelText.text = $"{_screw.Level}%";
-        _radialProgress.fillAmount = _screw.Level / 100f;
+        _radialProgress.fillAmount = _screw.Level / Potentiometer.MaxVal;
     }
 
     public void Deactivate()
