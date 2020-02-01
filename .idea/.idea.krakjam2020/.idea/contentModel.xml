@@ -18,6 +18,8 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="MicScript.cs" t="Include" />
+        <e p="RespondToEvent.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Beam.cs" t="Include" />
           <e p="GameValues.cs" t="Include" />
