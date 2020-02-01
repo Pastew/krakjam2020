@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /*
@@ -32,9 +33,17 @@ public class Potentiometer : MonoBehaviour
 
     public static int Value = 0;
 
+    [Header("Smoothing (average of last x reads) - optional")]
+    [SerializeField] private bool _smooth = false;
+    [SerializeField] private int _smoothLastValuesCapacity = 10;
+    private Queue<int> _lastValuesRead;
+
     void Start()
     {
         Setup();
+        _lastValuesRead = new Queue<int>();
+        for(int i = 0 ; i < _smoothLastValuesCapacity; i++)
+            _lastValuesRead.Enqueue(50);
     }
 
     private void Setup()
@@ -50,6 +59,15 @@ public class Potentiometer : MonoBehaviour
     {
         string readQueue = myDevice.readQueue();
         Value = readQueue != null ? int.Parse(readQueue) : Value;
+
+        if (_smooth)
+        {
+            while(_lastValuesRead.Count > _smoothLastValuesCapacity)
+                _lastValuesRead.Dequeue();
+            
+            _lastValuesRead.Enqueue(Value);
+            Value = (int)_lastValuesRead.Average();
+        }
         //print(readQueue); // myDevice.read() return the data coming from the device using thread.
     }
     

@@ -20,9 +20,16 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Beam.cs" t="Include" />
+          <e p="GameValues.cs" t="Include" />
+          <e p="Instantiate512Cubes.cs" t="Include" />
+          <e p="MicTestScript.cs" t="Include" />
+          <e p="ParamCube.cs" t="Include" />
           <e p="Potentiometer.cs" t="Include" />
           <e p="PotTester.cs" t="Include" />
           <e p="PotValueText.cs" t="Include" />
+          <e p="Screw.cs" t="Include" />
+          <e p="ScrewCanvas.cs" t="Include" />
+          <e p="ScrewDebugger.cs" t="Include" />
         </e>
         <e p="WRMHL" t="Include">
           <e p="Scripts" t="Include">
