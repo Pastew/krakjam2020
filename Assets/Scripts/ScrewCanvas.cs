@@ -7,16 +7,20 @@ public class ScrewCanvas : MonoBehaviour
 {
     [SerializeField] private Screw _screw;
     [SerializeField] private Text _levelText;
-    [SerializeField] private Slider _levelSlider;
+    [SerializeField] private Slider _linearProgress;
+    [SerializeField] private Image _radialProgress;
     private GameValues _gameValues;
 
-    [SerializeField] private float _animDuration = 0.5f;
+    [SerializeField] private float _OnEnableAnimDuration = 0.5f;
     [SerializeField] private AnimationCurve _moveCurve;
     [SerializeField] private AnimationCurve _scaleCurve;
+    
+    private CanvasGroup _canvasGroup;
 
     void Awake()
     {
         _gameValues = FindObjectOfType<GameValues>();
+        _canvasGroup = GetComponent<CanvasGroup>();
     }
 
     private void OnEnable()
@@ -29,14 +33,17 @@ public class ScrewCanvas : MonoBehaviour
 
         transform.position = startPos;
         transform.localScale = startScale;
+        _canvasGroup.alpha = 0;
         
-        transform.DOMove(targetPos, _animDuration).SetEase(_moveCurve);
-        transform.DOScale(targetScale, _animDuration).SetEase(_scaleCurve);
+        transform.DOMove(targetPos, _OnEnableAnimDuration).SetEase(_moveCurve);
+        transform.DOScale(targetScale, _OnEnableAnimDuration).SetEase(_scaleCurve);
+        _canvasGroup.DOFade(1, _OnEnableAnimDuration).SetEase(_scaleCurve);
     }
 
     void Update()
     {
-        _levelSlider.value = _screw.Level;
+        _linearProgress.value = _screw.Level;
         _levelText.text = $"{_screw.Level}%";
+        _radialProgress.fillAmount = _screw.Level / 100f;
     }
 }

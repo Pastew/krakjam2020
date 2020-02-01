@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BlenderFiles/uno_case_base.stl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BlenderFiles/uno_case_base.stl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BlenderFiles/uno_case_lid.stl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BlenderFiles/uno_case_lid.stl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BlenderFiles/uno_case_lid__with_hole_for_potentiometer_v1.stl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BlenderFiles/uno_case_lid__with_hole_for_potentiometer_v1.stl.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlenderFiles/Knob.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BlenderFiles/Knob.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlenderFiles/Knob.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BlenderFiles/Knob.blend1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Screw.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Screw.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Screw.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Screw.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/wrmhlReadLatest.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/wrmhlReadLatest.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameValues.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/8a/08349c2f/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BlenderFiles/Knob3.stl.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,8 +59,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewDebugger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +119,7 @@
       <updated>1580496020811</updated>
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
-      <workItem from="1580559118485" duration="8228000" />
+      <workItem from="1580559118485" duration="11533000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -116,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580570139331</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added multiplier to screw">
+      <created>1580570889823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580570889823</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +159,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Basic screw works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic screw works" />
+    <MESSAGE value="added multiplier to screw" />
+    <option name="LAST_COMMIT_MESSAGE" value="added multiplier to screw" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -219,10 +239,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580570141185">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580570891523">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580570141185" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580570891523" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580570053768">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -235,5 +255,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1580513663725" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580571118327">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580571118327" />
   </component>
 </project>
