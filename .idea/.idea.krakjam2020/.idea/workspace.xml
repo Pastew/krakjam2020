@@ -32,8 +32,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ArduinoReader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PotValueText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Beam.cs" />
         <option value="$PROJECT_DIR$/Assets/Extensions/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Beam.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PotTester.cs" />
       </list>
     </option>
@@ -89,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580496020811</updated>
       <workItem from="1580496030433" duration="3236000" />
-      <workItem from="1580511128446" duration="3040000" />
+      <workItem from="1580511128446" duration="3740000" />
     </task>
     <servers />
   </component>
