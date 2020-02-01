@@ -30,6 +30,7 @@
           <e p="PotTester.cs" t="Include" />
           <e p="PotValueText.cs" t="Include" />
           <e p="Screw.cs" t="Include" />
+          <e p="ScrewActivator.cs" t="Include" />
           <e p="ScrewCanvas.cs" t="Include" />
           <e p="ScrewDebugger.cs" t="Include" />
           <e p="ScrewSpawner.cs" t="Include" />

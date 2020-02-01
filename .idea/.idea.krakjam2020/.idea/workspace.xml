@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScrewActivator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MicScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RespondToEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RespondToEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Beam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Beam.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotTester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameValues.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrewActivator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/8a/08349c2f/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BlenderFiles/Knob3.stl.meta" root0="FORCE_HIGHLIGHTING" />
@@ -49,11 +52,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewDebugger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Beam.cs" />
         <option value="$PROJECT_DIR$/Assets/RespondToEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/MicScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewActivator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +116,7 @@
       <updated>1580496020811</updated>
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
-      <workItem from="1580559118485" duration="13300000" />
+      <workItem from="1580559118485" duration="15130000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -142,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580577306641</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="contributed to main scene, added some fixes">
+      <created>1580578082628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580578082628</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +180,8 @@
     <MESSAGE value="added multiplier to screw" />
     <MESSAGE value="radial progress bar experiment" />
     <MESSAGE value="created some prefabs," />
-    <option name="LAST_COMMIT_MESSAGE" value="created some prefabs," />
+    <MESSAGE value="contributed to main scene, added some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="contributed to main scene, added some fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -248,10 +260,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580577308277">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580578085950">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580577308277" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580578085950" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580570053768">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

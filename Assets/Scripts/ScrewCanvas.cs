@@ -11,11 +11,12 @@ public class ScrewCanvas : MonoBehaviour
     [SerializeField] private Image _radialProgress;
     private GameValues _gameValues;
 
-    [SerializeField] private float _OnEnableAnimDuration = 0.5f;
+    [SerializeField] private float _onEnableAnimDuration = 0.5f;
     [SerializeField] private AnimationCurve _moveCurve;
     [SerializeField] private AnimationCurve _scaleCurve;
     
     private CanvasGroup _canvasGroup;
+    [SerializeField] private float _onDeactivateAnimDuration = 0.5f;
 
     void Awake()
     {
@@ -35,9 +36,9 @@ public class ScrewCanvas : MonoBehaviour
         transform.localScale = startScale;
         _canvasGroup.alpha = 0;
         
-        transform.DOMove(targetPos, _OnEnableAnimDuration).SetEase(_moveCurve);
-        transform.DOScale(targetScale, _OnEnableAnimDuration).SetEase(_scaleCurve);
-        _canvasGroup.DOFade(1, _OnEnableAnimDuration).SetEase(_scaleCurve);
+        transform.DOMove(targetPos, _onEnableAnimDuration).SetEase(_moveCurve);
+        transform.DOScale(targetScale, _onEnableAnimDuration).SetEase(_scaleCurve);
+        _canvasGroup.DOFade(1, _onEnableAnimDuration).SetEase(_scaleCurve);
     }
 
     void Update()
@@ -45,5 +46,11 @@ public class ScrewCanvas : MonoBehaviour
         _linearProgress.value = _screw.Level;
         _levelText.text = $"{_screw.Level}%";
         _radialProgress.fillAmount = _screw.Level / 100f;
+    }
+
+    public void Deactivate()
+    {
+        transform.DOMove(transform.position + Vector3.up, _onDeactivateAnimDuration).SetEase(_moveCurve);
+        _canvasGroup.DOFade(0, _onDeactivateAnimDuration).SetEase(_scaleCurve);
     }
 }
