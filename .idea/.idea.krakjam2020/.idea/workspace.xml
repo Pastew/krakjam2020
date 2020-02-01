@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/beam.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/beam.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Beam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Beam.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PotTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PotTester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/arm.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/arm.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/arm2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/arm2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Beam.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Beam.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Screw.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Screw.prefab" afterDir="false" />
-    </list>
+    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/wrmhlRead.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MicTestScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arm.cs.meta" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -175,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580578082628</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Arm">
+      <created>1580588789473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580588789473</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +193,8 @@
     <MESSAGE value="radial progress bar experiment" />
     <MESSAGE value="created some prefabs," />
     <MESSAGE value="contributed to main scene, added some fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="contributed to main scene, added some fixes" />
+    <MESSAGE value="Arm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -282,10 +273,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580578085950">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580588790899">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580578085950" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580588790899" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580587114008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
