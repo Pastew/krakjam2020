@@ -178,7 +178,7 @@ public class MicTestScript : MonoBehaviour
             myCubes.ForEach((c) => { c.Hop(); });
             // block performing for 800ms or so
             _canPerformHop = false;
-            DG.Tweening.DOVirtual.DelayedCall(1, () => { _canPerformHop = true; });
+            DG.Tweening.DOVirtual.DelayedCall(1, () => { _updatesCount = 0; _canPerformHop = true; });
             _updatesCount = 0;
         }
     }
