@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Random = System.Random;
 
 public class Screw : MonoBehaviour
@@ -32,6 +33,21 @@ public class Screw : MonoBehaviour
         RotateView();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        print("Enter");
+        if(other.GetComponent<ScrewActivator>())
+            Activate();
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        print("Exit");
+
+        if(other.GetComponent<ScrewActivator>())
+            Deactivate();
+    }
+
     private void CalculateNewLevel()
     {
         _diff = Potentiometer.Value - _previousPotValue;
@@ -51,5 +67,11 @@ public class Screw : MonoBehaviour
     {
         active = true;
         _screwCanvas.gameObject.SetActive(true);
+    }
+    
+    public void Deactivate()
+    {
+        active = false;
+        _screwCanvas.Deactivate();
     }
 }
