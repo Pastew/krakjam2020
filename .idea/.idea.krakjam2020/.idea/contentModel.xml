@@ -32,6 +32,7 @@
           <e p="Screw.cs" t="Include" />
           <e p="ScrewCanvas.cs" t="Include" />
           <e p="ScrewDebugger.cs" t="Include" />
+          <e p="ScrewSpawner.cs" t="Include" />
         </e>
         <e p="WRMHL" t="Include">
           <e p="Scripts" t="Include">
