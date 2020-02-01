@@ -20,6 +20,8 @@ If you need speed and low latency take a look to wrmhlReadLatest.
 
 public class Potentiometer : MonoBehaviour
 {
+    public bool noArduino = true;
+
     wrmhl myDevice = new wrmhl(); // wrmhl is the bridge beetwen your computer and hardware.
 
     [Tooltip("SerialPort of your device.")]
@@ -40,6 +42,9 @@ public class Potentiometer : MonoBehaviour
 
     void Start()
     {
+        if (noArduino)
+            return;
+    
         Setup();
         _lastValuesRead = new Queue<int>();
         for(int i = 0 ; i < _smoothLastValuesCapacity; i++)
@@ -50,13 +55,16 @@ public class Potentiometer : MonoBehaviour
     {
         myDevice.set(portName, baudRate, ReadTimeout,
             QueueLenght); // This method set the communication with the following vars;
-        //                              Serial Port, Baud Rates, Read Timeout and QueueLenght.
+                            //          Serial Port, Baud Rates, Read Timeout and QueueLenght.
         myDevice.connect(); // This method open the Serial communication with the vars previously given.
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (noArduino)
+            return;
+
         string readQueue = myDevice.readQueue();
         Value = readQueue != null ? int.Parse(readQueue) : Value;
 
@@ -73,6 +81,8 @@ public class Potentiometer : MonoBehaviour
     
     void OnApplicationQuit()
     {
+        if (noArduino)
+            return;
         // close the Thread and Serial Port
         myDevice.close();
     }
