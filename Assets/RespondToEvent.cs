@@ -22,9 +22,6 @@ public class RespondToEvent : MonoBehaviour
         if (_canPerformHop)
         {
             Debug.Log("Call beam to move.");
-            _canPerformHop = false;
-            DG.Tweening.DOVirtual.DelayedCall(1, () => { _canPerformHop = true; });
-
         }
     }
 }

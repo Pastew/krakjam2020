@@ -45,6 +45,9 @@ public class MicScript : MonoBehaviour
         MakeFrequencyBands();
         BandBuffer();
         DetectShout();
+        
+        if(Input.GetKeyUp(KeyCode.E))
+            shoutEvent.Invoke();
     }
 
     void InitArrays()
@@ -179,7 +182,7 @@ public class MicScript : MonoBehaviour
         {
             // perform hop.
             // block performing for 800ms or so
-            //_canPerformHop = false;
+            _canPerformHop = false;
             DG.Tweening.DOVirtual.DelayedCall(1, () => { _updatesCount = 0; _canPerformHop = true; });
             shoutEvent.Invoke();
             _updatesCount = 0;
