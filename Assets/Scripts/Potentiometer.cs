@@ -21,8 +21,8 @@ If you need speed and low latency take a look to wrmhlReadLatest.
 public class Potentiometer : MonoBehaviour
 {
     public static int Value = 0;
-    public static float MaxVal = 100;
-    public static float MinVal = 0;
+    public static int MaxVal = 1000;
+    public static int MinVal = 0;
     
     public bool noArduino = false;
 

@@ -43,9 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c8d2400fe9da940a74f7d4f959005a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noArduino: 0
   portName: COM5
   baudRate: 250000
   ReadTimeout: 20
   QueueLenght: 1
-  _smooth: 0
+  _smooth: 1
   _smoothLastValuesCapacity: 10

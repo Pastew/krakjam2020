@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="" />
+    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="arm values">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArduinoScripts/PotentiometerReader/PotentiometerReader.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArduinoScripts/PotentiometerReader/PotentiometerReader.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PastewScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Potentiometer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Potentiometer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Screw.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Screw.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,18 +61,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ArduinoReader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PotValueText.cs" />
         <option value="$PROJECT_DIR$/Assets/Extensions/Extensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewDebugger.cs" />
         <option value="$PROJECT_DIR$/Assets/RespondToEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/MicScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewActivator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Beam.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Helpers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PotTester.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Arm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
       </list>
     </option>
   </component>
@@ -165,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580588789473</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="arm values">
+      <created>1580589024413</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580589024413</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +211,8 @@
     <MESSAGE value="created some prefabs," />
     <MESSAGE value="contributed to main scene, added some fixes" />
     <MESSAGE value="Arm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arm" />
+    <MESSAGE value="arm values" />
+    <option name="LAST_COMMIT_MESSAGE" value="arm values" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -273,25 +291,25 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580588790899">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580589030768">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580588790899" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580589030768" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580587114008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1580587114008" />
-    <state x="0" y="0" width="644" height="738" key="find.popup" timestamp="1580588091098">
+    <state x="0" y="0" width="644" height="738" key="find.popup" timestamp="1580590353878">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="0" y="0" width="644" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1580588091098" />
+    <state x="0" y="0" width="644" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1580590353878" />
     <state x="339" y="159" key="run.anything.popup" timestamp="1580513663725">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1580513663725" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580588148263">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580590349753">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580588148263" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580590349753" />
   </component>
 </project>

@@ -2,6 +2,6 @@
 
 public class GameValues : MonoBehaviour
 {
-    public int _okLevel;
-    public int _breakLevel;
+    public float _okLevel;
+    public float _breakLevel;
 }

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _duration: 0.4
-  _stepsRightOnStart: 1
+  _stepsRightOnStart: 0
   _moveX: 3
   _moveAnimCurve:
     serializedVersion: 2
@@ -270,6 +270,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameValues
+      objectReference: {fileID: 0}
+    - target: {fileID: 411366172368697509, guid: e36b4fad25a164e42b83acb5c0d842d2,
+        type: 3}
+      propertyPath: _okLevel
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 411366172368697509, guid: e36b4fad25a164e42b83acb5c0d842d2,
+        type: 3}
+      propertyPath: _breakLevel
+      value: 1.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36b4fad25a164e42b83acb5c0d842d2, type: 3}
@@ -1340,11 +1350,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Potentiometer
-      objectReference: {fileID: 0}
-    - target: {fileID: 299510527492941654, guid: ac5e7e1da92e7c24aaed193ff7266e9d,
-        type: 3}
-      propertyPath: noArduino
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 299510527492941655, guid: ac5e7e1da92e7c24aaed193ff7266e9d,
         type: 3}

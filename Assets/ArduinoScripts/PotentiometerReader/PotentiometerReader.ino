@@ -8,7 +8,7 @@ void setup() {
 
 void loop() {
   potVal = analogRead(potPin);
-  potVal = map(potVal, 0, 1023, 0, 100);
+  potVal = map(potVal, 0, 1023, 0, 1000);
   sendData(potVal);
   delay(5); // Choose your delay having in mind your ReadTimeout in Unity3D
 }

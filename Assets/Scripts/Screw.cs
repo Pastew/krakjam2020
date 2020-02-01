@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using Random = System.Random;
+﻿using UnityEngine;
 
 public class Screw : MonoBehaviour
 {
@@ -20,8 +18,10 @@ public class Screw : MonoBehaviour
 
     private void OnEnable()
     {
+        Random.seed = System.DateTime.Now.Millisecond;
+
         _previousPotValue = (int) Potentiometer.MaxVal;
-        _level = new Random().Next(0, 80);
+        _level = Random.Range(Potentiometer.MinVal, Potentiometer.MaxVal);
     }
 
     void Update()

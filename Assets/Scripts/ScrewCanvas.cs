@@ -1,5 +1,4 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +13,7 @@ public class ScrewCanvas : MonoBehaviour
     [SerializeField] private float _onEnableAnimDuration = 0.5f;
     [SerializeField] private AnimationCurve _moveCurve;
     [SerializeField] private AnimationCurve _scaleCurve;
-    
+
     private CanvasGroup _canvasGroup;
     [SerializeField] private float _onDeactivateAnimDuration = 0.5f;
 
@@ -35,7 +34,7 @@ public class ScrewCanvas : MonoBehaviour
         transform.position = startPos;
         transform.localScale = startScale;
         _canvasGroup.alpha = 0;
-        
+
         transform.DOMove(targetPos, _onEnableAnimDuration).SetEase(_moveCurve);
         transform.DOScale(targetScale, _onEnableAnimDuration).SetEase(_scaleCurve);
         _canvasGroup.DOFade(1, _onEnableAnimDuration).SetEase(_scaleCurve);
@@ -44,8 +43,9 @@ public class ScrewCanvas : MonoBehaviour
     void Update()
     {
         _linearProgress.value = _screw.Level;
-        _levelText.text = $"{_screw.Level}%";
-        _radialProgress.fillAmount = _screw.Level / Potentiometer.MaxVal;
+        double percents = 100 * _screw.Level / (double) Potentiometer.MaxVal;
+        _levelText.text = $"{(int)percents}%";
+        _radialProgress.fillAmount = _screw.Level / (float) Potentiometer.MaxVal;
     }
 
     public void Deactivate()
