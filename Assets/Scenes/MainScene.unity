@@ -1356,14 +1356,15 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _normalJanuszFace: {fileID: 21300000, guid: baa106d7f32e991408b5859ea0d6868a, type: 3}
+  _normalJanuszFace: {fileID: 21300000, guid: 56be9207ae0a7aa48a3b7729a406e471, type: 3}
   unfinishedScrewJanuszFaces:
   - {fileID: 21300000, guid: 77ad1466cd461de468f677eaf4ed4b09, type: 3}
   - {fileID: 21300000, guid: 66784a5e65010e24297a8a586dfced09, type: 3}
   - {fileID: 21300000, guid: 1d7cb1124e2d08148a439a96072e88ae, type: 3}
   - {fileID: 21300000, guid: d2ae16311a5959f49956bc39c7446ad2, type: 3}
   okScrewJanuszFaces:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 51eb0bd553c33634184e00e5c283fbf3, type: 3}
+  - {fileID: 21300000, guid: 9fc6d3eddb140df4e8f362e281e027af, type: 3}
   breakScrewJanuszFaces:
   - {fileID: 21300000, guid: 54b28810a6d814745b14b20c28c3c5f9, type: 3}
   - {fileID: 21300000, guid: bf5043c94a8746040b9d750b49824279, type: 3}
