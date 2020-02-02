@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="fix rotate angle">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="Errors left text" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +29,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Janusz.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MicScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Beam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoiseMeter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/8a/08349c2f/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,10 +44,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/Thread/Common/wrmhlThread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotValueText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/5groszy.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrewDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/Janusz/janusz_gameover.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameValues.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotTester.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/CoinPrefab.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameValues.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnKeyUpEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,20 +87,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Helpers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PotTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shaker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewEventInvoker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OnKeyUpEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Beam.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Arm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NoiseMeter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MicThresholdController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MicThresholdController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OnKeyUpEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Score.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +161,7 @@
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
       <workItem from="1580559118485" duration="15130000" />
-      <workItem from="1580603353477" duration="20654000" />
+      <workItem from="1580603353477" duration="26565000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -381,7 +380,49 @@
       <option name="project" value="LOCAL" />
       <updated>1580624807664</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="GameOver and NEw Game works OK">
+      <created>1580638569782</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1580638569782</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Coins and more janusz">
+      <created>1580641766654</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1580641766654</updated>
+    </task>
+    <task id="LOCAL-00034" summary="wallet finished">
+      <created>1580642686635</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1580642686635</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Wallet in gameover screen">
+      <created>1580642956830</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1580642956830</updated>
+    </task>
+    <task id="LOCAL-00036" summary="More Janusz faces">
+      <created>1580643127086</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1580643127086</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Errors left text">
+      <created>1580644369242</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1580644369242</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,11 +445,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="contributed to main scene, added some fixes" />
-    <MESSAGE value="Arm" />
-    <MESSAGE value="arm values" />
-    <MESSAGE value="Refactor, cleanup" />
-    <MESSAGE value="arm anim" />
     <MESSAGE value="colors" />
     <MESSAGE value="Destroy Screw on break" />
     <MESSAGE value="added fx, sound boom" />
@@ -417,7 +453,6 @@
     <MESSAGE value="Basic Janusz works" />
     <MESSAGE value="Janusz works like a charm" />
     <MESSAGE value="more effects" />
-    <MESSAGE value="More Janusz faces" />
     <MESSAGE value="Janusz reacts later" />
     <MESSAGE value="Beam move sound" />
     <MESSAGE value="arm sounds" />
@@ -429,7 +464,13 @@
     <MESSAGE value="fix resolution problems" />
     <MESSAGE value="bg music fix" />
     <MESSAGE value="fix rotate angle" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix rotate angle" />
+    <MESSAGE value="GameOver and NEw Game works OK" />
+    <MESSAGE value="Coins and more janusz" />
+    <MESSAGE value="wallet finished" />
+    <MESSAGE value="Wallet in gameover screen" />
+    <MESSAGE value="More Janusz faces" />
+    <MESSAGE value="Errors left text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Errors left text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -516,14 +557,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580624808896">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580643128413">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580624808896" />
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580617578723">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580643128413" />
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580640000580">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1580617578723" />
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1580640000580" />
     <state x="0" y="0" width="666" height="738" key="find.popup" timestamp="1580620382267">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -532,9 +573,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1580513663725" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580637700819">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580641557990">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580637700819" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580641557990" />
   </component>
 </project>

@@ -50,7 +50,7 @@ public class Janusz : MonoBehaviour
     }
 
     // Janusz reactions to events
-    private void OnScrewOK()
+    public void OnScrewOK()
     {
         OnAnyEventOccured();
         if (!_alreadyWalkedIn || !ShouldReact())
@@ -60,9 +60,8 @@ public class Janusz : MonoBehaviour
         HappyJanuszAnimation();
         PlayRandomSound(_okClips);
     }
-
     
-    private void OnScrewUnfinished()
+    public void OnScrewUnfinished()
     {
         OnAnyEventOccured();
         if (!_alreadyWalkedIn || !ShouldReact())
@@ -72,7 +71,7 @@ public class Janusz : MonoBehaviour
         PlayRandomSound(_unfinishedClips);
     }
 
-    private void OnScrewBreak()
+    public void OnScrewBreak()
     {
         OnAnyEventOccured();
         if (!_alreadyWalkedIn || !ShouldReact())

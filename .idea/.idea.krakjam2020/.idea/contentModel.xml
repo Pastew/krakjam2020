@@ -70,6 +70,7 @@
           <e p="PotTester.cs" t="Include" />
           <e p="PotValueText.cs" t="Include" />
           <e p="RespondToEvent.cs" t="Include" />
+          <e p="Score.cs" t="Include" />
           <e p="Screw.cs" t="Include" />
           <e p="ScrewActivator.cs" t="Include" />
           <e p="ScrewCanvas.cs" t="Include" />
@@ -77,6 +78,7 @@
           <e p="ScrewEventInvoker.cs" t="Include" />
           <e p="ScrewSpawner.cs" t="Include" />
           <e p="Shaker.cs" t="Include" />
+          <e p="Timer.cs" t="Include" />
         </e>
         <e p="WRMHL" t="Include">
           <e p="Scripts" t="Include">
