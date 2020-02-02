@@ -60,7 +60,7 @@ public class ScrewCanvas : MonoBehaviour
 
         SetFillColorAndTryShake();
     }
-
+    
     private void Shake()
     {
         if (_shakePosTweener != null)

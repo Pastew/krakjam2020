@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using DG.Tweening;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Screw : MonoBehaviour
 {
@@ -15,6 +18,7 @@ public class Screw : MonoBehaviour
 
     [SerializeField] private float _visualRotateMultiplier = 1f;
     private int _diff;
+    private GameValues _gameValues;
 
     private void OnEnable()
     {
@@ -24,6 +28,11 @@ public class Screw : MonoBehaviour
         _level = Random.Range(Potentiometer.MinVal, Potentiometer.MaxVal);
     }
 
+    private void Start()
+    {
+        _gameValues = FindObjectOfType<GameValues>();
+    }
+
     void Update()
     {
         if (!active)
@@ -31,6 +40,15 @@ public class Screw : MonoBehaviour
 
         CalculateNewLevel();
         RotateView();
+        
+        if (Level > _gameValues._breakLevel)
+            BreakScrew();
+    }
+
+    private void BreakScrew()
+    {
+        active = false;
+        transform.DOShakeScale(0.5f, 0.7f, 50).OnComplete(() => Destroy(gameObject));
     }
 
     private void OnTriggerEnter2D(Collider2D other)
