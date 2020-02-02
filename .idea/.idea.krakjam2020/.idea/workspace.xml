@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="Small fix">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NoiseMeter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NoiseMeter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="small fix">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screw.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screw.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraBehaviour.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Screw.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Screw.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Screw.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/Thread/Common/wrmhlThread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotValueText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,6 +65,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/wrmhlRead.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fonts.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MicThresholdController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MicTestScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,18 +87,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PotTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewEventInvoker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnKeyUpEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Beam.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Arm.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NoiseMeter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MicThresholdController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" />
       </list>
     </option>
   </component>
@@ -142,7 +158,7 @@
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
       <workItem from="1580559118485" duration="15130000" />
-      <workItem from="1580603353477" duration="14802000" />
+      <workItem from="1580603353477" duration="18056000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -319,7 +335,28 @@
       <option name="project" value="LOCAL" />
       <updated>1580619156685</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Mic Noise meter and setter">
+      <created>1580620199919</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1580620199919</updated>
+    </task>
+    <task id="LOCAL-00027" summary="small fix">
+      <created>1580622035440</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1580622035440</updated>
+    </task>
+    <task id="LOCAL-00028" summary="small fix">
+      <created>1580622070414</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1580622070414</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +379,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Basic screw works" />
     <MESSAGE value="added multiplier to screw" />
     <MESSAGE value="radial progress bar experiment" />
     <MESSAGE value="created some prefabs," />
@@ -366,7 +402,9 @@
     <MESSAGE value="Janusz sounds" />
     <MESSAGE value="Janusz happy anim fix" />
     <MESSAGE value="Small fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
+    <MESSAGE value="Mic Noise meter and setter" />
+    <MESSAGE value="small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -377,6 +415,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="456" height="438" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1580560571959" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1580621791316">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1580621791316" />
     <state width="1322" height="82" key="GridCell.Tab.0.bottom" timestamp="1580603237984">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -441,29 +483,33 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1322" height="82" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1580603237985" />
+    <state x="521" y="79" key="RollbackChangesDialog" timestamp="1580621796195">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="521" y="79" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1580621796195" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1580570540853">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580619158018">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580622072708">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580619158018" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580622072708" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580617578723">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1580617578723" />
-    <state x="0" y="0" width="666" height="738" key="find.popup" timestamp="1580618121533">
+    <state x="0" y="0" width="666" height="738" key="find.popup" timestamp="1580620382267">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="0" y="0" width="666" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1580618121533" />
+    <state x="0" y="0" width="666" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1580620382267" />
     <state x="339" y="159" key="run.anything.popup" timestamp="1580513663725">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1580513663725" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580619062835">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580623026432">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580619062835" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580623026432" />
   </component>
 </project>

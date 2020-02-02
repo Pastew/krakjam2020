@@ -39,7 +39,7 @@ public class Janusz : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
         _januszPosition = transform.position;
-        transform.position = _januszPosition + Vector3.right * 300;
+        transform.position = _januszPosition + Vector3.right * 1600;
 
         _eventInvoker = FindObjectOfType<ScrewEventInvoker>();
         _eventInvoker.AddScrewBreakListener(OnScrewBreak);
