@@ -865,7 +865,7 @@ MonoBehaviour:
   _spawnOnOK: {fileID: 100006, guid: 8fc06027b01064e4f885fd8dd2929310, type: 3}
   _spawnOnUnfinished: {fileID: 100006, guid: 2a474af3f4c27be4e9bdce39cfe4315d, type: 3}
   _multiplier: 0.7
-  _visualRotateMultiplier: 0.21
+  _visualRotateMultiplier: 0.16
   _fxAnchor: {fileID: 2860709098558377857}
 --- !u!58 &5332870665713150357
 CircleCollider2D:
