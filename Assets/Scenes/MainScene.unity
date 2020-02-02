@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _duration: 0.4
-  _stepsRightOnStart: 0
+  _stepsRightOnStart: -2
   _moveX: 3
   _moveAnimCurve:
     serializedVersion: 2
@@ -873,6 +873,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822341779}
   m_CullTransparentMesh: 0
+--- !u!114 &901018221 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6407022798677201141, guid: ba66c27a038c86c42b712ec38e4ba4a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6407022798752051523}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b191fad403b3c4d9d8438e8ccc56d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1141544278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1166,11 @@ PrefabInstance:
       propertyPath: shoutEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 5010101}
+    - target: {fileID: 3039256830395224158, guid: 7e0a4d81a958ef74a9d163a82d8ab4e5,
+        type: 3}
+      propertyPath: shoutEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 901018221}
     - target: {fileID: 3039256830395224159, guid: 7e0a4d81a958ef74a9d163a82d8ab4e5,
         type: 3}
       propertyPath: m_LocalPosition.x
