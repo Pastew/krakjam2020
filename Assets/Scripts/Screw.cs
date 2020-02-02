@@ -52,7 +52,7 @@ public class Screw : MonoBehaviour
     {
         if (!active)
             return;
-        
+
         if (_level < _gameValues._okLevel)
             FindObjectOfType<ScrewEventInvoker>().InvokeUnfinishedEvent();
     }
@@ -61,11 +61,11 @@ public class Screw : MonoBehaviour
     {
         active = false;
         FindObjectOfType<ScrewEventInvoker>().InvokeScrewBreak();
+        Instantiate(_spawnOnDestroy, transform.position, Quaternion.identity);
+
         transform.DOShakeScale(0.5f, 0.7f, 50).OnComplete(() =>
-        {
-            Instantiate(_spawnOnDestroy, transform.position, Quaternion.identity);
-            Destroy(gameObject);
-        });
+            Destroy(gameObject)
+        );
     }
 
     private void OnTriggerEnter2D(Collider2D other)

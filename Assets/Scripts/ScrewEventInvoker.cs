@@ -10,7 +10,7 @@ namespace DefaultNamespace
         private UnityEvent _screwNextUnfinishedEvent;
         private UnityEvent _screwOKUnfinishedEvent;
 
-        private void Start()
+        private void Awake()
         {
             _screwBreakEvent = new UnityEvent();
             _screwNextUnfinishedEvent = new UnityEvent();
@@ -19,6 +19,7 @@ namespace DefaultNamespace
 
         public void InvokeScrewBreak()
         {
+            print("Break");
             _screwBreakEvent.Invoke();
         }
 

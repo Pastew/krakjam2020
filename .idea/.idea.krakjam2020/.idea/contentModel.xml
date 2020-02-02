@@ -54,9 +54,11 @@
           <e p="Arm.cs" t="Include" />
           <e p="Beam.cs" t="Include" />
           <e p="BossScript.cs" t="Include" />
+          <e p="CameraBehaviour.cs" t="Include" />
           <e p="GameValues.cs" t="Include" />
           <e p="Helpers.cs" t="Include" />
           <e p="Instantiate512Cubes.cs" t="Include" />
+          <e p="Janusz.cs" t="Include" />
           <e p="MicScript.cs" t="Include" />
           <e p="MicTestScript.cs" t="Include" />
           <e p="ParamCube.cs" t="Include" />
