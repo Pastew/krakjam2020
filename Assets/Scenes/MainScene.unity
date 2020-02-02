@@ -1193,10 +1193,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1958925679}
-  - component: {fileID: 1958925682}
   - component: {fileID: 1958925681}
   - component: {fileID: 1958925680}
   - component: {fileID: 1958925683}
+  - component: {fileID: 1958925682}
   - component: {fileID: 1958925684}
   m_Layer: 5
   m_Name: Janusz
@@ -1272,14 +1272,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ab4cfad4299a840b2a73b5c1b66af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dur: 1.5
-  _delay: 0.45
-  _posPow: 18.56
+  _dur: 0.46
+  _delay: 0.24
+  _posPow: 19.16
   _posVib: 24
-  _rotPow: 0
+  _rotPow: 25.18
   _rotVib: 10
-  _scalePow: 0.36
-  _scaleVib: 3
+  _scalePow: 0.12
+  _scaleVib: 78
 --- !u!114 &1958925683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1293,6 +1293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventsNeededToInvokeJanuszWalkIn: 3
+  chanceToReact: 60
   _happyDuration: 2
   _happyPower: 2
   _happyCurve:
@@ -1355,6 +1356,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _normalJanuszFace: {fileID: 21300000, guid: baa106d7f32e991408b5859ea0d6868a, type: 3}
+  unfinishedScrewJanuszFaces:
+  - {fileID: 21300000, guid: 77ad1466cd461de468f677eaf4ed4b09, type: 3}
+  - {fileID: 21300000, guid: 66784a5e65010e24297a8a586dfced09, type: 3}
+  - {fileID: 21300000, guid: 1d7cb1124e2d08148a439a96072e88ae, type: 3}
+  - {fileID: 21300000, guid: d2ae16311a5959f49956bc39c7446ad2, type: 3}
+  okScrewJanuszFaces:
+  - {fileID: 0}
+  breakScrewJanuszFaces:
+  - {fileID: 21300000, guid: 54b28810a6d814745b14b20c28c3c5f9, type: 3}
+  - {fileID: 21300000, guid: bf5043c94a8746040b9d750b49824279, type: 3}
 --- !u!114 &1958925684
 MonoBehaviour:
   m_ObjectHideFlags: 0
