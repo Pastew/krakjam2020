@@ -1,8 +1,11 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class Shaker : MonoBehaviour
 {
+    [SerializeField] private bool _shakeOnEnable = false;
+    
     [SerializeField] private float _dur = 0.5f;
     [SerializeField] private float _delay = 0;
 
@@ -16,9 +19,9 @@ public class Shaker : MonoBehaviour
     [SerializeField] private float _scalePow = 2;
     [SerializeField] private int _scaleVib = 10;
 
-    private void Update()
+    private void OnEnable()
     {
-        if(Input.GetKeyUp(KeyCode.L))
+        if(_shakeOnEnable)
             Shake();
     }
 
