@@ -51,6 +51,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ArduinoStub.cs" t="Include" />
           <e p="Arm.cs" t="Include" />
           <e p="Beam.cs" t="Include" />
           <e p="BossScript.cs" t="Include" />
