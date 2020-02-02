@@ -78,7 +78,7 @@ public class ScrewCanvas : MonoBehaviour
     {
         if (_screw.Level < _gameValues._okLevel)
             _fill.color = _notOkColor;
-        else if (_screw.Level < Potentiometer.MaxVal)
+        else if (_screw.Level <= Potentiometer.MaxVal)
             _fill.color = _okColor;
         else
         {
