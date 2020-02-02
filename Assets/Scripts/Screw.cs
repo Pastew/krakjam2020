@@ -1,4 +1,4 @@
-﻿using System;
+﻿using DefaultNamespace;
 using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -8,6 +8,7 @@ public class Screw : MonoBehaviour
     [SerializeField] private ScrewCanvas _screwCanvas;
     [SerializeField] private GameObject _view;
     [SerializeField] private GameObject _spawnOnDestroy;
+
 
     private bool active = false;
 
@@ -32,6 +33,7 @@ public class Screw : MonoBehaviour
     private void Start()
     {
         _gameValues = FindObjectOfType<GameValues>();
+        FindObjectOfType<MicScript>().AddShoutListener(OnShout);
     }
 
     void Update()
@@ -41,14 +43,24 @@ public class Screw : MonoBehaviour
 
         CalculateNewLevel();
         RotateView();
-        
+
         if (Level > _gameValues._breakLevel)
             BreakScrew();
+    }
+
+    private void OnShout()
+    {
+        if (!active)
+            return;
+        
+        if (_level < _gameValues._okLevel)
+            FindObjectOfType<ScrewEventInvoker>().InvokeUnfinishedEvent();
     }
 
     private void BreakScrew()
     {
         active = false;
+        FindObjectOfType<ScrewEventInvoker>().InvokeScrewBreak();
         transform.DOShakeScale(0.5f, 0.7f, 50).OnComplete(() =>
         {
             Instantiate(_spawnOnDestroy, transform.position, Quaternion.identity);
@@ -58,16 +70,13 @@ public class Screw : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Enter");
-        if(other.GetComponent<ScrewActivator>())
+        if (other.GetComponent<ScrewActivator>())
             Activate();
     }
-    
+
     private void OnTriggerExit2D(Collider2D other)
     {
-        print("Exit");
-
-        if(other.GetComponent<ScrewActivator>())
+        if (other.GetComponent<ScrewActivator>())
             Deactivate();
     }
 
@@ -91,7 +100,7 @@ public class Screw : MonoBehaviour
         active = true;
         _screwCanvas.gameObject.SetActive(true);
     }
-    
+
     public void Deactivate()
     {
         active = false;

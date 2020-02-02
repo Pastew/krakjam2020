@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -187,5 +188,10 @@ public class MicScript : MonoBehaviour
             shoutEvent.Invoke();
             _updatesCount = 0;
         }
+    }
+
+    public void AddShoutListener(UnityAction onShout)
+    {
+        shoutEvent.AddListener(onShout);
     }
 }
