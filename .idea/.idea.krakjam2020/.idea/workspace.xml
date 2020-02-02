@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="Errors left text">
+    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="timer">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrewEventInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/wrmhlRead.cs" root0="FORCE_HIGHLIGHTING" />
@@ -168,7 +168,7 @@
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
       <workItem from="1580559118485" duration="15130000" />
-      <workItem from="1580603353477" duration="27447000" />
+      <workItem from="1580603353477" duration="28359000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -436,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580644510154</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="timer">
+      <created>1580645298358</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1580645298358</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="colors" />
     <MESSAGE value="Destroy Screw on break" />
     <MESSAGE value="added fx, sound boom" />
     <MESSAGE value="events" />
@@ -484,7 +490,8 @@
     <MESSAGE value="Wallet in gameover screen" />
     <MESSAGE value="More Janusz faces" />
     <MESSAGE value="Errors left text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Errors left text" />
+    <MESSAGE value="timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="timer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -571,18 +578,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580644511862">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580645299879">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580644511862" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580645299879" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580640000580">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1580640000580" />
-    <state x="0" y="0" width="666" height="738" key="find.popup" timestamp="1580620382267">
+    <state x="0" y="0" width="666" height="738" key="find.popup" timestamp="1580645646811">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="0" y="0" width="666" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1580620382267" />
+    <state x="0" y="0" width="666" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1580645646811" />
     <state x="339" y="159" key="run.anything.popup" timestamp="1580513663725">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
