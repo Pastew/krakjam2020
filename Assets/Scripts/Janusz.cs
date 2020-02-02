@@ -31,8 +31,14 @@ public class Janusz : MonoBehaviour
     [SerializeField] private List<Sprite> okScrewJanuszFaces;
     [SerializeField] private List<Sprite> breakScrewJanuszFaces;
 
+    [SerializeField] private List<AudioClip> _okClips;
+    [SerializeField] private List<AudioClip> _unfinishedClips;
+    [SerializeField] private List<AudioClip> _breakClips;
+    private AudioSource _audioSource;
+
     void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
         _januszPosition = transform.position;
         transform.position = _januszPosition + Vector3.right * 300;
 
@@ -51,17 +57,20 @@ public class Janusz : MonoBehaviour
         if (!_alreadyWalkedIn || !ShouldReact())
             return;
 
-        _image.sprite = GetRandomImage(okScrewJanuszFaces);
+        _image.sprite = GetRandomElement(okScrewJanuszFaces);
         HappyJanuszAnimation();
+        PlayRandomSound(_okClips);
     }
 
+    
     private void OnScrewUnfinished()
     {
         OnAnyEventOccured();
         if (!_alreadyWalkedIn || !ShouldReact())
             return;
         
-        _image.sprite = GetRandomImage(unfinishedScrewJanuszFaces);
+        _image.sprite = GetRandomElement(unfinishedScrewJanuszFaces);
+        PlayRandomSound(_unfinishedClips);
     }
 
     private void OnScrewBreak()
@@ -70,8 +79,8 @@ public class Janusz : MonoBehaviour
         if (!_alreadyWalkedIn || !ShouldReact())
             return;
         
-        _image.sprite = GetRandomImage(breakScrewJanuszFaces);
-
+        _image.sprite = GetRandomElement(breakScrewJanuszFaces);
+        PlayRandomSound(_breakClips);
         GetComponent<Shaker>().Shake();
     }
 
@@ -88,8 +97,8 @@ public class Janusz : MonoBehaviour
     // Other
     private void WalkIn()
     {
-        print("WalkIn");
         transform.DOMove(_januszPosition, 3f).OnComplete(() => _alreadyWalkedIn = true);
+        DOVirtual.DelayedCall(2, () => PlayRandomSound(_okClips));
     }
 
     private void HappyJanuszAnimation()
@@ -105,8 +114,14 @@ public class Janusz : MonoBehaviour
         return Random.Range(0, 100) > (100 - chanceToReact);
     }
 
-    private Sprite GetRandomImage(List<Sprite> sprites)
+    private void PlayRandomSound(List<AudioClip> clips)
     {
-        return sprites[(int) Random.Range(0, sprites.Count - 1)];
+        _audioSource.clip = GetRandomElement(clips);
+        _audioSource.Play();
+    }
+    
+    private T GetRandomElement<T>(List<T> someList)
+    {
+        return someList[Random.Range(0, someList.Count - 1)];
     }
 }
