@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class Beam : MonoBehaviour
@@ -10,6 +11,13 @@ public class Beam : MonoBehaviour
     [SerializeField] private GameObject _screwPrefab;
     [SerializeField] private int _screwsNumber = 150;
     
+    [SerializeField] private AudioSource _audioSource;
+
+    private void Awake()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     private void Start()
     {
         transform.Translate(Vector3.right * _stepsRightOnStart * _moveX);
@@ -21,5 +29,6 @@ public class Beam : MonoBehaviour
     public void Move()
     {
         transform.DOMoveX(transform.position.x - _moveX, _duration).SetEase(_moveAnimCurve);
+        _audioSource.Play();
     }
 }
