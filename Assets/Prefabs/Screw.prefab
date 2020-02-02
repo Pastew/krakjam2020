@@ -456,6 +456,7 @@ MonoBehaviour:
   _levelText: {fileID: 4618834737130734245}
   _linearProgress: {fileID: 4618834736777318008}
   _radialProgress: {fileID: 3822022721618496427}
+  _fill: {fileID: 4618834737198304012}
   _onEnableAnimDuration: 0.25
   _moveCurve:
     serializedVersion: 2
@@ -524,6 +525,11 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _onDeactivateAnimDuration: 0.2
+  _shakePosStrength: 0.1
+  _shakePosVibrato: 10
+  _notOkColor: {r: 0.9622642, g: 0.8262853, b: 0.18609825, a: 1}
+  _okColor: {r: 0.4264288, g: 0.8867924, b: 0.16313636, a: 1}
+  _badColor: {r: 0.9150943, g: 0.17351182, b: 0.15970986, a: 1}
 --- !u!225 &4618834736671365625
 CanvasGroup:
   m_ObjectHideFlags: 0

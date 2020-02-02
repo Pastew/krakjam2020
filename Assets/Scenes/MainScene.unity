@@ -265,12 +265,12 @@ PrefabInstance:
     - target: {fileID: 411366172368697509, guid: e36b4fad25a164e42b83acb5c0d842d2,
         type: 3}
       propertyPath: _okLevel
-      value: 0.9
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 411366172368697509, guid: e36b4fad25a164e42b83acb5c0d842d2,
         type: 3}
       propertyPath: _breakLevel
-      value: 1.05
+      value: 1050
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36b4fad25a164e42b83acb5c0d842d2, type: 3}
@@ -1086,6 +1086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Potentiometer
+      objectReference: {fileID: 0}
+    - target: {fileID: 299510527492941654, guid: ac5e7e1da92e7c24aaed193ff7266e9d,
+        type: 3}
+      propertyPath: _smoothLastValuesCapacity
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 299510527492941655, guid: ac5e7e1da92e7c24aaed193ff7266e9d,
         type: 3}
