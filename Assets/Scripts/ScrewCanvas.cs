@@ -18,13 +18,11 @@ public class ScrewCanvas : MonoBehaviour
     private CanvasGroup _canvasGroup;
     [SerializeField] private float _onDeactivateAnimDuration = 0.5f;
 
-    [Header("Shake")]
-    private Tweener _shakePosTweener;
+    [Header("Shake")] private Tweener _shakePosTweener;
     [SerializeField] private float _shakePosStrength = 90;
     [SerializeField] private int _shakePosVibrato = 10;
-    
-    [Header("Colors")]
-    [SerializeField] private Color _notOkColor = Color.yellow;
+
+    [Header("Colors")] [SerializeField] private Color _notOkColor = Color.yellow;
     [SerializeField] private Color _okColor = Color.green;
     [SerializeField] private Color _badColor = Color.red;
 
@@ -55,17 +53,17 @@ public class ScrewCanvas : MonoBehaviour
     {
         _linearProgress.value = _screw.Level;
         double percents = 100 * _screw.Level / (double) Potentiometer.MaxVal;
-        _levelText.text = $"{(int)percents}%";
+        _levelText.text = $"{(int) percents}%";
         _radialProgress.fillAmount = _screw.Level / (float) Potentiometer.MaxVal;
 
         SetFillColorAndTryShake();
     }
-    
+
     private void Shake()
     {
         if (_shakePosTweener != null)
             return;
-        
+
         _shakePosTweener = transform.DOShakePosition(999, _shakePosStrength, _shakePosVibrato);
     }
 
@@ -73,12 +71,12 @@ public class ScrewCanvas : MonoBehaviour
     {
         _shakePosTweener.Kill();
     }
-    
+
     private void SetFillColorAndTryShake()
     {
         if (_screw.Level < _gameValues._okLevel)
             _fill.color = _notOkColor;
-        else if (_screw.Level <= Potentiometer.MaxVal)
+        else if (_screw.Level <= Potentiometer.MaxVal + Potentiometer.MaxVal / 100f)
             _fill.color = _okColor;
         else
         {
@@ -91,7 +89,7 @@ public class ScrewCanvas : MonoBehaviour
     {
         transform.DOMove(transform.position + Vector3.up, _onDeactivateAnimDuration).SetEase(_moveCurve);
         _canvasGroup.DOFade(0, _onDeactivateAnimDuration).SetEase(_scaleCurve);
-        
+
         StopShake();
     }
 }
