@@ -24,19 +24,15 @@ public class MicScript : MonoBehaviour
     int _updatesCount;
     bool _canPerformHop = true;
 
-    public bool _calibrationPeriodOn;
-    public float ShoutThreshold = 0;
+    public float ShoutThreshold = 10;
     public float CurrVolume = 0;
-    
+
     void Start()
     {
         InitArrays();
         SetupMicrophone();
         PrintMicrophoneInfo();
         StartCapturingMicrophoneInput();
-
-        _calibrationPeriodOn = true;
-        DG.Tweening.DOVirtual.DelayedCall(2, () => { _calibrationPeriodOn = false; ShoutThreshold *= 1.3f;  });
     }
 
     // Update is called once per frame
@@ -46,8 +42,8 @@ public class MicScript : MonoBehaviour
         MakeFrequencyBands();
         BandBuffer();
         DetectShout();
-        
-        if(Input.GetKeyUp(KeyCode.E))
+
+        if (Input.GetKeyUp(KeyCode.E))
             shoutEvent.Invoke();
     }
 
@@ -103,7 +99,7 @@ public class MicScript : MonoBehaviour
         for (int i = 0; i < 8; i++)
         {
             float average = 0;
-            int sampleCount = (int)Mathf.Pow(2, i) * 2;
+            int sampleCount = (int) Mathf.Pow(2, i) * 2;
 
             if (i == 7)
             {
@@ -119,24 +115,9 @@ public class MicScript : MonoBehaviour
             average /= count;
 
             _frequencyBands[i] = average * 10;
-
-            if (_calibrationPeriodOn)
-            {
-                _frequencyBandsMaxValues[i] = Mathf.Max(_frequencyBands[i], _frequencyBandsMaxValues[i]);
-            }
-        }
-
-        if (_calibrationPeriodOn)
-        {
-            float _currThreshold = 0;
-            for (int i = 0; i < 8; i++)
-            {
-                _currThreshold += _frequencyBandsMaxValues[i];
-            }
-            //_currThreshold *= (float)1.5;
-            ShoutThreshold = Mathf.Max(ShoutThreshold, _currThreshold);
         }
     }
+
     void BandBuffer()
     {
         for (int g = 0; g < 8; g++)
@@ -157,11 +138,6 @@ public class MicScript : MonoBehaviour
 
     void DetectShout()
     {
-        if (_calibrationPeriodOn)
-        {
-            return;
-        }
-
         float sum = 0;
         for (int i = 0; i < 8; i++)
         {
@@ -184,7 +160,11 @@ public class MicScript : MonoBehaviour
             // perform hop.
             // block performing for 800ms or so
             _canPerformHop = false;
-            DG.Tweening.DOVirtual.DelayedCall(1, () => { _updatesCount = 0; _canPerformHop = true; });
+            DG.Tweening.DOVirtual.DelayedCall(1, () =>
+            {
+                _updatesCount = 0;
+                _canPerformHop = true;
+            });
             shoutEvent.Invoke();
             _updatesCount = 0;
         }

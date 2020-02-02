@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -41,7 +42,18 @@ public class Potentiometer : MonoBehaviour
     [SerializeField] private bool _smooth = false;
     [SerializeField] private int _smoothLastValuesCapacity = 10;
     private Queue<int> _lastValuesRead;
+    
+    private static Potentiometer _instance;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+        if (_instance == null) {
+            _instance = this;
+        } else {
+            DestroyObject(gameObject);
+        }
+    }
 
     void Start()
     {

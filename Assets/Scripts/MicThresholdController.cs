@@ -12,13 +12,11 @@ public class MicThresholdController : MonoBehaviour
     {
         _slider = GetComponent<Slider>();
         _micScript = FindObjectOfType<MicScript>();
+        _slider.value = _micScript.ShoutThreshold;
     }
 
     void Update()
     {
-        if (_micScript._calibrationPeriodOn)
-            _slider.value = _micScript.ShoutThreshold;
-        else
-            _micScript.ShoutThreshold = _slider.value;
+        _micScript.ShoutThreshold = _slider.value;
     }
 }

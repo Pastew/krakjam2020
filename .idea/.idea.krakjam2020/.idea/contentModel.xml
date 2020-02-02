@@ -55,6 +55,7 @@
           <e p="Beam.cs" t="Include" />
           <e p="BossScript.cs" t="Include" />
           <e p="CameraBehaviour.cs" t="Include" />
+          <e p="GameOver.cs" t="Include" />
           <e p="GameValues.cs" t="Include" />
           <e p="Helpers.cs" t="Include" />
           <e p="Instantiate512Cubes.cs" t="Include" />
