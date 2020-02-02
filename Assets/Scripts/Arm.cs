@@ -13,16 +13,24 @@ public class Arm : MonoBehaviour
 
     [SerializeField] private AnimationCurve _moveOutCurve;
     [SerializeField] private AnimationCurve _scaleOutCurve;
-    
+
     [SerializeField] private AnimationCurve _scaleInCurve;
     [SerializeField] private AnimationCurve _moveInCurve;
-    
+
     [SerializeField] private float _moveDownShift = 3f;
 
     private Vector3 _startingScale;
 
-    private void Start()
+    private float _previousZRotation = 0;
+
+    private AudioSource _audioSource;
+    [SerializeField] private AudioClip _screwAudioCLip;
+    [SerializeField] private AudioClip _unscrewAudioClip;
+    [SerializeField] private int _audioChangeTheshold = 10;
+
+    private void Awake()
     {
+        _audioSource = GetComponent<AudioSource>();
         _startingScale = transform.localScale;
     }
 
@@ -32,7 +40,35 @@ public class Arm : MonoBehaviour
             Potentiometer.MinVal, Potentiometer.MaxVal,
             _minRotationZ, _maxRotationZ);
 
+        if (Math.Abs(_previousZRotation - zRotation) > _audioChangeTheshold)
+        {
+            ChangeAudio(zRotation);
+        }
+
+
         transform.localRotation = Quaternion.Euler(0, 0, zRotation);
+    }
+
+    private void ChangeAudio(float zRotation)
+    {
+        if (_previousZRotation > zRotation)
+        {
+            _audioSource.clip = _screwAudioCLip;
+            if (!_audioSource.isPlaying)
+                _audioSource.Play();
+        }
+        else if (_previousZRotation < zRotation)
+        {
+            _audioSource.clip = _unscrewAudioClip;
+            if (!_audioSource.isPlaying)
+                _audioSource.Play();
+        }
+        else if (Math.Abs(_previousZRotation - zRotation) > _audioChangeTheshold)
+        {
+            _audioSource.Pause();
+        }
+
+        _previousZRotation = zRotation;
     }
 
     public void NextScrew()

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="Refactor, cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/270304__littlerobotsoundfactory__collect-point-00.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/270304__littlerobotsoundfactory__collect-point-00.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Beam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Beam.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arm.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PotTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameValues.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Arm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaker.cs" />
@@ -76,6 +73,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Beam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Arm.cs" />
       </list>
     </option>
   </component>
@@ -135,7 +133,7 @@
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
       <workItem from="1580559118485" duration="15130000" />
-      <workItem from="1580603353477" duration="10118000" />
+      <workItem from="1580603353477" duration="11003000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -277,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580615151136</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Beam move sound">
+      <created>1580615423582</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1580615423582</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +324,8 @@
     <MESSAGE value="more effects" />
     <MESSAGE value="More Janusz faces" />
     <MESSAGE value="Janusz reacts later" />
-    <option name="LAST_COMMIT_MESSAGE" value="Janusz reacts later" />
+    <MESSAGE value="Beam move sound" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beam move sound" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -398,10 +404,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580615152237">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580615424766">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580615152237" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580615424766" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580587114008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
