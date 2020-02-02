@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="Errors left text" />
+    <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="Errors left text">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Screw.cs.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Screw.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Screw.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WRMHL/Scripts/Thread/Common/wrmhlThread.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PotValueText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,13 +101,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Potentiometer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MicThresholdController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnKeyUpEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Score.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
       </list>
     </option>
   </component>
@@ -161,7 +168,7 @@
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
       <workItem from="1580559118485" duration="15130000" />
-      <workItem from="1580603353477" duration="26565000" />
+      <workItem from="1580603353477" duration="27447000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -422,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580644369242</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Errors left text">
+      <created>1580644510154</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1580644510154</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,10 +571,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580643128413">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580644511862">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580643128413" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580644511862" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580640000580">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -573,9 +587,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1580513663725" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580641557990">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580644887699">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580641557990" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580644887699" />
   </component>
 </project>

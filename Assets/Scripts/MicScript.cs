@@ -174,4 +174,9 @@ public class MicScript : MonoBehaviour
     {
         shoutEvent.AddListener(onShout);
     }
+
+    public void InvokeShoutEvent()
+    {
+        shoutEvent.Invoke();
+    }
 }
