@@ -3036,10 +3036,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d2ae16311a5959f49956bc39c7446ad2, type: 3}
   okScrewJanuszFaces:
   - {fileID: 21300000, guid: 51eb0bd553c33634184e00e5c283fbf3, type: 3}
+  - {fileID: 21300000, guid: 4eceabe2b872d0649914d35e69f948a5, type: 3}
   - {fileID: 21300000, guid: 9fc6d3eddb140df4e8f362e281e027af, type: 3}
+  - {fileID: 21300000, guid: 7a68228665e3a414694b2fbbbfe92a03, type: 3}
   breakScrewJanuszFaces:
   - {fileID: 21300000, guid: 54b28810a6d814745b14b20c28c3c5f9, type: 3}
+  - {fileID: 21300000, guid: c6e3c7a157d781e4fbd254333466e9b7, type: 3}
   - {fileID: 21300000, guid: bf5043c94a8746040b9d750b49824279, type: 3}
+  - {fileID: 21300000, guid: ef313a42f87f3594ea5e2d418e7647f4, type: 3}
   _okClips:
   - {fileID: 8300000, guid: f2cf127fdd8bb5e4ba22ee9965520a81, type: 3}
   - {fileID: 8300000, guid: 1cde855fb49055b4e9749b3d2b4da755, type: 3}
