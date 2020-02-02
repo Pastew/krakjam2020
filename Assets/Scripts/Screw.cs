@@ -7,6 +7,7 @@ public class Screw : MonoBehaviour
 {
     [SerializeField] private ScrewCanvas _screwCanvas;
     [SerializeField] private GameObject _view;
+    [SerializeField] private GameObject _spawnOnDestroy;
 
     private bool active = false;
 
@@ -48,7 +49,11 @@ public class Screw : MonoBehaviour
     private void BreakScrew()
     {
         active = false;
-        transform.DOShakeScale(0.5f, 0.7f, 50).OnComplete(() => Destroy(gameObject));
+        transform.DOShakeScale(0.5f, 0.7f, 50).OnComplete(() =>
+        {
+            Instantiate(_spawnOnDestroy, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        });
     }
 
     private void OnTriggerEnter2D(Collider2D other)
