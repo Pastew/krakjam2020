@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2639722-9c2d-4fba-b809-79d0d4cdb0d1" name="Default Changelist" comment="Refactor, cleanup">
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/270304__littlerobotsoundfactory__collect-point-00.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/270304__littlerobotsoundfactory__collect-point-00.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.krakjam2020/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX/CFX2 Prefabs/Pickup Items/CFX2_PickupStar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX/CFX2 Prefabs/Pickup Items/CFX2_PickupStar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screw.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screw.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Screw.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +73,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScrewEventInvoker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnKeyUpEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MicScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Janusz.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Screw.cs" />
       </list>
     </option>
   </component>
@@ -133,7 +136,7 @@
       <workItem from="1580496030433" duration="3236000" />
       <workItem from="1580511128446" duration="3740000" />
       <workItem from="1580559118485" duration="15130000" />
-      <workItem from="1580603353477" duration="8653000" />
+      <workItem from="1580603353477" duration="9489000" />
     </task>
     <task id="LOCAL-00001" summary="Basic screw works">
       <created>1580570139331</created>
@@ -240,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580612695030</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Janusz works like a charm">
+      <created>1580613893619</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1580613893619</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +288,8 @@
     <MESSAGE value="events" />
     <MESSAGE value="Shaker" />
     <MESSAGE value="Basic Janusz works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic Janusz works" />
+    <MESSAGE value="Janusz works like a charm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Janusz works like a charm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="214" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1580559203845">
@@ -357,10 +368,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1580570540853" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580612696328">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580613894982">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580612696328" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580613894982" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580587114008">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

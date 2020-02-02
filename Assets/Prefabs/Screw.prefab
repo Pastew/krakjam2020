@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &896143971896120234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2860709098558377857}
+  m_Layer: 0
+  m_Name: FXAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2860709098558377857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896143971896120234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.88, y: 0.82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4618834737331232837}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3822022720289639848
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +842,7 @@ Transform:
   m_Children:
   - {fileID: 4618834736671365630}
   - {fileID: 3822022720289639863}
+  - {fileID: 2860709098558377857}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -831,8 +862,11 @@ MonoBehaviour:
   _view: {fileID: 3822022720289639848}
   _spawnOnDestroy: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
+  _spawnOnOK: {fileID: 100006, guid: 8fc06027b01064e4f885fd8dd2929310, type: 3}
+  _spawnOnUnfinished: {fileID: 100006, guid: 2a474af3f4c27be4e9bdce39cfe4315d, type: 3}
   _multiplier: 0.7
   _visualRotateMultiplier: 0.21
+  _fxAnchor: {fileID: 2860709098558377857}
 --- !u!58 &5332870665713150357
 CircleCollider2D:
   m_ObjectHideFlags: 0

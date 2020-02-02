@@ -8,7 +8,8 @@ public class Screw : MonoBehaviour
     [SerializeField] private ScrewCanvas _screwCanvas;
     [SerializeField] private GameObject _view;
     [SerializeField] private GameObject _spawnOnDestroy;
-
+    [SerializeField] private GameObject _spawnOnOK;
+    [SerializeField] private GameObject _spawnOnUnfinished;
 
     private bool active = false;
 
@@ -21,6 +22,8 @@ public class Screw : MonoBehaviour
     [SerializeField] private float _visualRotateMultiplier = 1f;
     private int _diff;
     private GameValues _gameValues;
+    
+    [SerializeField] private Transform _fxAnchor;
 
     private void OnEnable()
     {
@@ -54,9 +57,15 @@ public class Screw : MonoBehaviour
             return;
 
         if (_level < _gameValues._okLevel)
+        {
             FindObjectOfType<ScrewEventInvoker>().InvokeUnfinishedEvent();
-        else if(_level < _gameValues._breakLevel)
+            Instantiate(_spawnOnUnfinished, _fxAnchor.position, Quaternion.identity);
+        }
+        else if (_level < _gameValues._breakLevel)
+        {
             FindObjectOfType<ScrewEventInvoker>().InvokeScrewOkEvent();
+            Instantiate(_spawnOnOK, _fxAnchor.position, Quaternion.identity);
+        }
     }
 
     private void BreakScrew()
