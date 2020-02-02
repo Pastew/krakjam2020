@@ -55,6 +55,8 @@ public class Screw : MonoBehaviour
 
         if (_level < _gameValues._okLevel)
             FindObjectOfType<ScrewEventInvoker>().InvokeUnfinishedEvent();
+        else if(_level < _gameValues._breakLevel)
+            FindObjectOfType<ScrewEventInvoker>().InvokeScrewOkEvent();
     }
 
     private void BreakScrew()

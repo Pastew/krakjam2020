@@ -17,9 +17,9 @@ namespace DefaultNamespace
             _screwOKUnfinishedEvent = new UnityEvent();
         }
 
+        // Invokes
         public void InvokeScrewBreak()
         {
-            print("Break");
             _screwBreakEvent.Invoke();
         }
 
@@ -33,6 +33,7 @@ namespace DefaultNamespace
             _screwOKUnfinishedEvent.Invoke();
         }
 
+        // Listeners
         public void AddScrewBreakListener(UnityAction a)
         {
             _screwBreakEvent.AddListener(a);
