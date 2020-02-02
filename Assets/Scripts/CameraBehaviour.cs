@@ -7,7 +7,6 @@ public class CameraBehaviour : MonoBehaviour
     {
         FindObjectOfType<ScrewEventInvoker>().AddScrewBreakListener(() =>
         {
-            print("Break listen");
             GetComponent<Shaker>().Shake();
         });
     }
