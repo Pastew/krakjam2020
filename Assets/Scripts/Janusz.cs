@@ -60,7 +60,6 @@ public class Janusz : MonoBehaviour
         HappyJanuszAnimation();
         PlayRandomSound(_okClips);
     }
-
     
     public void OnScrewUnfinished()
     {

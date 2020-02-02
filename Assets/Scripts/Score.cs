@@ -37,6 +37,7 @@ public class Score : MonoBehaviour
         {
             Destroy(coinGO);
             _wallet.GetComponent<Shaker>().Shake();
+            _wallet.GetComponent<AudioSource>().Play();
         });
     }
 }

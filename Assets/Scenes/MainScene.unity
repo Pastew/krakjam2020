@@ -2211,22 +2211,31 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.24583334
     - serializedVersion: 3
-      time: 0.5365379
-      value: 0.019198395
-      inSlope: -0.10769284
-      outSlope: -0.10769284
+      time: 0.23475529
+      value: 0.047277078
+      inSlope: -0.0036162937
+      outSlope: -0.0036162937
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.9407127
+      value: 0.081778504
+      inSlope: -0.07437513
+      outSlope: -0.07437513
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.20355164
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: -0.39880145
-      inSlope: -1.0888723
-      outSlope: -1.0888723
+      inSlope: -0.5456479
+      outSlope: -0.5456479
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.13602883
+      inWeight: 0.5446439
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -2253,22 +2262,22 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 1
     - serializedVersion: 3
-      time: 0.7619128
-      value: 0.49613696
-      inSlope: -0.029787414
-      outSlope: -0.029787414
+      time: 0.5702472
+      value: 0.48899585
+      inSlope: 0.14622125
+      outSlope: 0.14622125
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.99785477
-      outWeight: 0.33333334
+      outWeight: 0.5706072
     - serializedVersion: 3
       time: 1
-      value: 1
-      inSlope: 15.142873
-      outSlope: 15.142873
+      value: 0.9976196
+      inSlope: 8.000043
+      outSlope: 8.000043
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.105003454
+      inWeight: 0.03994348
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -3235,6 +3244,7 @@ GameObject:
   - component: {fileID: 2142092232}
   - component: {fileID: 2142092231}
   - component: {fileID: 2142092233}
+  - component: {fileID: 2142092234}
   m_Layer: 5
   m_Name: Wallet
   m_TagString: Untagged
@@ -3319,6 +3329,102 @@ MonoBehaviour:
   _rotElasticity: 0
   _scalePow: 0
   _scaleVib: 167
+--- !u!82 &2142092234
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142092229}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6bfaeb3ed698f5349ba2fe646676c4e1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &3039256831142583122
 PrefabInstance:
   m_ObjectHideFlags: 0
