@@ -1422,7 +1422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 17, y: -3}
+  m_AnchoredPosition: {x: 11.299988, y: -9.600006}
   m_SizeDelta: {x: 293.96, y: 677}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1958925680
@@ -1495,9 +1495,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventsNeededToInvokeJanuszWalkIn: 3
   _eventsNeededToFirstImageChange: 5
-  chanceToReact: 60
+  chanceToReact: 85
   _happyDuration: 2
-  _happyPower: 2
+  _happyPower: 50
   _happyCurve:
     serializedVersion: 2
     m_Curve:

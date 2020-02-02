@@ -22,7 +22,6 @@ public class Janusz : MonoBehaviour
 
     [Header("Happy Janusz Anim")] [SerializeField]
     private float _happyDuration = 2;
-
     [SerializeField] private float _happyPower = 2;
     [SerializeField] private AnimationCurve _happyCurve;
 
@@ -57,7 +56,7 @@ public class Janusz : MonoBehaviour
         if (!_alreadyWalkedIn || !ShouldReact())
             return;
 
-        _image.sprite = GetRandomElement(okScrewJanuszFaces);
+        _image.sprite = GetNextElement(okScrewJanuszFaces);
         HappyJanuszAnimation();
         PlayRandomSound(_okClips);
     }
@@ -69,7 +68,7 @@ public class Janusz : MonoBehaviour
         if (!_alreadyWalkedIn || !ShouldReact())
             return;
         
-        _image.sprite = GetRandomElement(unfinishedScrewJanuszFaces);
+        _image.sprite = GetNextElement(unfinishedScrewJanuszFaces);
         PlayRandomSound(_unfinishedClips);
     }
 
@@ -79,7 +78,7 @@ public class Janusz : MonoBehaviour
         if (!_alreadyWalkedIn || !ShouldReact())
             return;
         
-        _image.sprite = GetRandomElement(breakScrewJanuszFaces);
+        _image.sprite = GetNextElement(breakScrewJanuszFaces);
         PlayRandomSound(_breakClips);
         GetComponent<Shaker>().Shake();
     }
@@ -116,12 +115,15 @@ public class Janusz : MonoBehaviour
 
     private void PlayRandomSound(List<AudioClip> clips)
     {
-        _audioSource.clip = GetRandomElement(clips);
+        _audioSource.clip = GetNextElement(clips);
         _audioSource.Play();
     }
     
-    private T GetRandomElement<T>(List<T> someList)
+    private T GetNextElement<T>(List<T> someList)
     {
-        return someList[Random.Range(0, someList.Count - 1)];
+        T el = someList[0];
+        someList.RemoveAt(0);
+        someList.Add(el);
+        return el;
     }
 }
