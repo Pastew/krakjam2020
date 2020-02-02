@@ -15,6 +15,7 @@ public class Janusz : MonoBehaviour
 
     [Header("Before Walk In")] [SerializeField]
     private int _eventsNeededToInvokeJanuszWalkIn = 3;
+    [SerializeField] private int _eventsNeededToFirstImageChange = 5;
 
     [Header("Reactions")] [SerializeField] [Range(0, 100)]
     private int chanceToReact = 70;
@@ -80,11 +81,11 @@ public class Janusz : MonoBehaviour
         if (_anyEventOccuredCounter >= _eventsNeededToInvokeJanuszWalkIn && !_alreadyWalkedIn)
             WalkIn();
 
-        _image.sprite = _normalJanuszFace;
+        if(_anyEventOccuredCounter >= _eventsNeededToFirstImageChange)
+            _image.sprite = _normalJanuszFace;
     }
 
     // Other
-
     private void WalkIn()
     {
         print("WalkIn");
@@ -98,6 +99,9 @@ public class Janusz : MonoBehaviour
 
     private bool ShouldReact()
     {
+        if (_anyEventOccuredCounter <= _eventsNeededToFirstImageChange)
+            return false;
+        
         return Random.Range(0, 100) > (100 - chanceToReact);
     }
 
