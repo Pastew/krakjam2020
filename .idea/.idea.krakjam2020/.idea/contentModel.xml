@@ -61,6 +61,8 @@
           <e p="Janusz.cs" t="Include" />
           <e p="MicScript.cs" t="Include" />
           <e p="MicTestScript.cs" t="Include" />
+          <e p="MicThresholdController.cs" t="Include" />
+          <e p="NoiseMeter.cs" t="Include" />
           <e p="OnKeyUpEvent.cs" t="Include" />
           <e p="ParamCube.cs" t="Include" />
           <e p="Potentiometer.cs" t="Include" />

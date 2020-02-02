@@ -25,8 +25,8 @@ public class MicScript : MonoBehaviour
     bool _canPerformHop = true;
 
     public bool _calibrationPeriodOn;
-    public float _shoutThreshold = 0;
-    public float _currVolume = 0;
+    public float ShoutThreshold = 0;
+    public float CurrVolume = 0;
     
     void Start()
     {
@@ -36,7 +36,7 @@ public class MicScript : MonoBehaviour
         StartCapturingMicrophoneInput();
 
         _calibrationPeriodOn = true;
-        DG.Tweening.DOVirtual.DelayedCall(2, () => { _calibrationPeriodOn = false; _shoutThreshold *= 1.3f;  });
+        DG.Tweening.DOVirtual.DelayedCall(2, () => { _calibrationPeriodOn = false; ShoutThreshold *= 1.3f;  });
     }
 
     // Update is called once per frame
@@ -134,7 +134,7 @@ public class MicScript : MonoBehaviour
                 _currThreshold += _frequencyBandsMaxValues[i];
             }
             //_currThreshold *= (float)1.5;
-            _shoutThreshold = Mathf.Max(_shoutThreshold, _currThreshold);
+            ShoutThreshold = Mathf.Max(ShoutThreshold, _currThreshold);
         }
     }
     void BandBuffer()
@@ -168,7 +168,7 @@ public class MicScript : MonoBehaviour
             sum += _bandBuffer[i];
         }
 
-        if (sum > _shoutThreshold)
+        if (sum > ShoutThreshold)
         {
             _updatesCount++;
         }
@@ -177,7 +177,7 @@ public class MicScript : MonoBehaviour
             _updatesCount = 0;
         }
 
-        _currVolume = sum;
+        CurrVolume = sum;
 
         if (_updatesCount >= 10 && _canPerformHop)
         {
