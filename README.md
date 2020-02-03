@@ -21,6 +21,9 @@ The game uses 2 controllers.
 * Unity used for game.
 * Ender-3 used for 3D printing.
 
+### YouTube video
+[![alt](https://img.youtube.com/vi/CuvS7_y8ex4/0.jpg)](https://www.youtube.com/watch?v=CuvS7_y8ex4)
+
 ### Screenshoots 
 ![Alt text](screenshots/s1.png?raw=true "screenshots/s1.png")  
 ![Alt text](screenshots/s2.jpg?raw=true "screenshots/s2.jpg")  
