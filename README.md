@@ -25,7 +25,7 @@ The game uses 2 controllers.
 ![Alt text](screenshots/s1.png?raw=true "screenshots/s1.png")  
 ![Alt text](screenshots/s2.jpg?raw=true "screenshots/s2.jpg")  
 ![Alt text](screenshots/s3.png?raw=true "screenshots/s3.png") 
-![Alt text](screenshots/s3.jpg?raw=true "screenshots/s4.jpg") 
+![Alt text](screenshots/s4.jpg?raw=true "screenshots/s4.jpg") 
 
 ### Credits
 * [@ympek](http://ympek.net/)
